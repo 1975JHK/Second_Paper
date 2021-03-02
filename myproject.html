@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Machine Learning</title>
+        <style>
+            table, tr, th, td{
+                border:1px solid #ccc;
+                border-collapse: collapse;
+            }
+            th, td{padding: 10px, 20px;}
+        </style>
+    </head>
+    <body>
+        <h1>Process for Building a Model using Machine Learning</h1>
+        <hr>
+        <table>
+            <caption><strong>Required Packages for Modelings</strong></caption>
+            <colgroup>
+                <col style="background-color:#eee; width:150px;">
+                <col style="width:150px;">
+                <col style='width:200px;'>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th style="background-color:#eee;">Package Names</th>
+                    <th style='background-color:#eee'>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="5">Preprocessing</th>
+                    <td>dplyr</td>
+                    <td>Manipulating</td>
+                </tr>
+                <tr>
+                    <td>tidyr</td>
+                    <td>Manipulating</td>
+                </tr>
+                <tr>
+                    <td>caret</td>
+                    <td>Manipulating</td>
+                </tr>
+                <tr>
+                    <td>readxl</td>
+                    <td>Imporinting Excel File</td>
+                </tr>
+                <tr>
+                    <td>ggplot2</td>
+                    <td>Visualization</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Algorithm</th>
+                    <td colspan="2">RandomForest</td>
+                </tr>
+                <tr>
+                    <td>e1071</td>
+                    <td>SVM Algorithm</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>K-Nearest Neighbors</td>
+                </tr>
+                <tr>
+                    <td>keras</td>
+                    <td>Neural Networks</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <ol>
+            <div class='detail'>
+                <strong><li>Preprocessing</li></strong>
+                <img src='preprocessing.jpeg' width="25%">
+                <ul>
+                    <li>Removing Not Availables</li>
+                    <li>Removing Variables with Zero Variance</li>
+                    <li>Encoding Categorical Variables</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <strong><li>Exploratory Data Analysis</li></strong>
+            <a href="https://cran.r-project.org/web/packages/dlookr/vignettes/EDA.html"><img src='eda2.jpg' width='25%'></a>
+            <ul>
+                <li>Correlation Analysis</li>
+                <li>Scatter Plots</li>
+                <li>Box Plots</li>
+            </ul>
+            <br>
+            <br>
+            <strong><li>Feature Creation</li></strong>
+            <ul>
+                <li>Study the relations on Varialbes</li>
+                <li>Making derivates</li>
+            </ul>
+            <strong><li>Feature Selection</li></strong>
+            <strong><li>Building a Model</li></strong>
+            <ul>
+                <li>Make Models with Algorithms</li>
+                <li>Comparing Performances with the models</li>
+                <li>Pick the Model with the Best Performance</li>
+            </ul>
+            <strong><li>Validating the Model</li></strong>
+            <ul>
+                <li>Tuning the Model with Hyper-Parameters</li>
+                <li>Evaluating the Model with test dataset</li>
+            </ul>
+            <strong><li>Prediction new data</li></strong>
+        </ol>
+    </body>
+</html>
